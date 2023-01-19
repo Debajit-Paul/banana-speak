@@ -1,7 +1,10 @@
-var translate_btn=document.querySelector("#btn-translate");
-var InputText=document.querySelector("#txtInput");
-var outputText=document.querySelector("#output");
+var btnTranslate = document.querySelector("#btn-translate");
+var txtInput = document.querySelector("#txt-input");
+var outputtxt = document.querySelector("#output");
 
 
+function clickEventHandeler (){
+    outputtxt.value =txtInput.value;
+}
 
-translate_btn.addEventListener("click", clickEventHandler())
+btnTranslate.addEventListener("click", clickEventHandeler)
