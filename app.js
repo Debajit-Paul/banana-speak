@@ -12,7 +12,7 @@ function clickEventHandeler (){
     inputText =txtInput.value;
     fetch(generateURL(inputText))
     .then(function responseHandeler(response) {return response.json()})
-    .then(function logJSON(json) {outputtxt.value =json.contents.translated})
+    .then(function logJSON(json) {outputtxt.value =json.contents.translated; console.log(json)})
 }
 
 btnTranslate.addEventListener("click", clickEventHandeler)
