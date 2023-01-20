@@ -1,14 +1,14 @@
-/**@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600&display=swap');**/
-@import url('https://fonts.googleapis.com/css2?family=Explora&family=Unbounded:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap');
 
 :root {
     --primary-color: #f8d449;
     --width-break:600px;
+    --black-color: #333333;
 }
 
 * {
     box-sizing: border-box;
-    font-style: 'Kalam', cursive;
+    font-family: 'Baloo 2', cursive;
 }
 
 body {
@@ -23,7 +23,7 @@ nav {
 }
 
 h1 {
-    color: black;
+    color: var(--black-color);
     font-size: 2rem;
     padding: 1rem;
     margin: 0;
@@ -37,11 +37,11 @@ main {
 
 #txt-input {
     width: 100%;
-    min-height: 15vh;
+    max-height: 16vh;
     display: block;
     margin-top: 2rem;
     padding: 1rem 1rem;
-    border: 1px solid black;
+    border: 2px solid var(--black-color);
     border-radius:  1rem;
 }
 
@@ -51,14 +51,15 @@ main {
     margin: 1rem 0rem;
     padding: 1rem 2rem;
     font-size: large;
+    border-radius: 1rem;
+    color: var(--black-color);
 }
 
 #output {
-    border: 1px solid black;
+    border: 2px solid var(--black-color);
     border-radius:  1rem;
     width: 100%;
-    min-height: 15vh;
-    max-height: 20vh;
+    min-height: 20vh;
     box-sizing: border-box;
     padding: 1rem 1rem;
 }
@@ -69,11 +70,9 @@ main {
     position:absolute;
     top: 0;
     left: 2rem;
-
 }
 
 footer {
-    bottom: 100%;
     width: 100%;
     padding: 1rem;
     background-color: var(--primary-color);
